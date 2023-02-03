@@ -1,0 +1,35 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    documentclass: article
+    papersize: letter
+    fontsize: 12pt
+    mainfont: "Avenir"
+    sansfont: "Avenir"
+    geometry:
+      - margin=1in
+      - heightrounded
+params:
+  name: "John Doe"
+  assignment: "Homework 1"
+  grade: "98%"
+---
+
+**Student**: `r params$name`
+
+**Assignment**: `r params$assignment`
+
+**Grade**: `r params$grade`
+
+Here's an example figure:
+
+```{r}
+#| echo: false
+#| fig.align: 'center'
+#| fig.cap: "What a cute cat!"
+#| out.width: "50%"
+
+knitr::include_graphics("images/cat.png")
+```
