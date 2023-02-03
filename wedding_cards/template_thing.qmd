@@ -1,0 +1,31 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    documentclass: article
+    papersize: letter
+    fontsize: 12pt
+    mainfont: "EB Garamond"
+    sansfont: "EB Garamond"
+    geometry:
+      - margin=1in
+      - heightrounded
+params:
+  name: "John Doe"
+  gift: "thing"
+---
+
+\begin{center}
+\Large{\textbf{Thank you!}}
+\end{center}
+
+Dear `r params$name`,
+
+We wanted to thank you so much for your gift of a `r params$gift`.
+
+It was so thoughful!
+
+Best, 
+
+John & Liz

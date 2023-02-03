@@ -15,21 +15,15 @@ params:
   name: "John Doe"
   assignment: "Homework 1"
   grade: "98%"
+  feedback: "text"
 ---
+
+# Feedback for `r params$assignment`
 
 **Student**: `r params$name`
 
-**Assignment**: `r params$assignment`
-
 **Grade**: `r params$grade`
 
-Here's an example figure:
+**Feedback**: 
 
-```{r}
-#| echo: false
-#| fig.align: 'center'
-#| fig.cap: "What a cute cat!"
-#| out.width: "50%"
-
-knitr::include_graphics("images/cat.png")
-```
+`r params$feedback`

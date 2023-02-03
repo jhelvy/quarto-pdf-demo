@@ -1,0 +1,7 @@
+name,assignment,grade,feedback
+John Paul Helveston,Homework 1,98,Nice work!
+Leah Kaplan,Homework 1,95,Keep it up!
+Ryan Watkins,Homework 1,67,"Looks like you had trouble on number 3. You forgot to load the packages, e.g. `library(tidyverse)`. That’s why your functions wouldn’t run."
+John Paul Helveston,Homework 2,99,Nice job again!
+Leah Kaplan,Homework 2,99,Great work!
+Ryan Watkins,Homework 2,95,"Much better this time, good job!"
