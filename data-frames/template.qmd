@@ -1,0 +1,26 @@
+---
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    documentclass: article
+    papersize: letter
+    fontsize: 12pt
+    mainfont: "Avenir"
+    sansfont: "Avenir"
+    geometry:
+      - margin=1in
+      - heightrounded
+params:
+  df: df
+  month: "January"
+---
+
+# Summary report for `r params$month`
+
+```{r}
+#| echo: false 
+
+df <- jsonlite::fromJSON(params$df)
+knitr::kable(df)
+```
