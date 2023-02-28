@@ -16,10 +16,10 @@ for (i in months) {
             mean_dep_delay = round(mean(dep_delay), 1),
             mean_arr_delay = round(mean(arr_delay), 1)
         )
-    quarto::quarto_render(
+    jph::quarto_render_move(
         input = "template.qmd",
-        output_format = "pdf",
         output_file = paste0(month, ".pdf"),
+        output_dir = "summaries",
         execute_params = list(
             df = jsonlite::toJSON(delay_summary),
             month = month
